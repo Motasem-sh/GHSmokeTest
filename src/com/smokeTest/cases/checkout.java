@@ -9,6 +9,8 @@ public class checkout {
 	public static void searchPDP() {
 		genaretors.clickButtonIfExsists(selectors.closeModal);
 		genaretors.sendData(selectors.search, inputs.PDPN);
+		
+		
 		genaretors.pressButton(selectors.searchButton);
 	}
 	
