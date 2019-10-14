@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="97785" started-at="2019-10-14T15:40:31 IDT" finished-at="2019-10-14T15:42:09 IDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="97785" started-at="2019-10-14T15:40:31 IDT" finished-at="2019-10-14T15:42:09 IDT">
+      <class name="com.smokeTest.run.runSmokeTest">
+        <test-method status="PASS" signature="doBeforeTest()[pri:0, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="doBeforeTest" is-config="true" duration-ms="3998" started-at="2019-10-14T15:40:31 IDT" finished-at="2019-10-14T15:40:35 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeTest -->
+        <test-method status="PASS" signature="openURL()[pri:1, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="openURL" duration-ms="5848" started-at="2019-10-14T15:40:35 IDT" finished-at="2019-10-14T15:40:41 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openURL -->
+        <test-method status="PASS" signature="registration()[pri:2, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="registration" duration-ms="30332" started-at="2019-10-14T15:40:41 IDT" finished-at="2019-10-14T15:41:11 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration -->
+        <test-method status="PASS" signature="signIn()[pri:3, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="signIn" duration-ms="20546" started-at="2019-10-14T15:41:11 IDT" finished-at="2019-10-14T15:41:32 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method status="PASS" signature="startCheckout()[pri:4, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="startCheckout" duration-ms="34909" started-at="2019-10-14T15:41:32 IDT" finished-at="2019-10-14T15:42:07 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startCheckout -->
+        <test-method status="PASS" signature="exitDriver()[pri:0, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="exitDriver" is-config="true" duration-ms="2104" started-at="2019-10-14T15:42:07 IDT" finished-at="2019-10-14T15:42:09 IDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitDriver -->
+      </class> <!-- com.smokeTest.run.runSmokeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
