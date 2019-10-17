@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="97785" started-at="2019-10-14T15:40:31 IDT" finished-at="2019-10-14T15:42:09 IDT">
+  <suite name="Default suite" duration-ms="103485" started-at="2019-10-17T10:15:31 IDT" finished-at="2019-10-17T10:17:14 IDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="97785" started-at="2019-10-14T15:40:31 IDT" finished-at="2019-10-14T15:42:09 IDT">
+    <test name="Default test" duration-ms="103485" started-at="2019-10-17T10:15:31 IDT" finished-at="2019-10-17T10:17:14 IDT">
       <class name="com.smokeTest.run.runSmokeTest">
-        <test-method status="PASS" signature="doBeforeTest()[pri:0, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="doBeforeTest" is-config="true" duration-ms="3998" started-at="2019-10-14T15:40:31 IDT" finished-at="2019-10-14T15:40:35 IDT">
+        <test-method status="PASS" signature="doBeforeTest()[pri:0, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="doBeforeTest" is-config="true" duration-ms="4039" started-at="2019-10-17T10:15:31 IDT" finished-at="2019-10-17T10:15:35 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeTest -->
-        <test-method status="PASS" signature="openURL()[pri:1, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="openURL" duration-ms="5848" started-at="2019-10-14T15:40:35 IDT" finished-at="2019-10-14T15:40:41 IDT">
+        <test-method status="PASS" signature="openURL()[pri:1, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="openURL" duration-ms="7811" started-at="2019-10-17T10:15:35 IDT" finished-at="2019-10-17T10:15:43 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openURL -->
-        <test-method status="PASS" signature="registration()[pri:2, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="registration" duration-ms="30332" started-at="2019-10-14T15:40:41 IDT" finished-at="2019-10-14T15:41:11 IDT">
+        <test-method status="PASS" signature="registration()[pri:2, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="registration" duration-ms="27196" started-at="2019-10-17T10:15:43 IDT" finished-at="2019-10-17T10:16:10 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registration -->
-        <test-method status="PASS" signature="signIn()[pri:3, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="signIn" duration-ms="20546" started-at="2019-10-14T15:41:11 IDT" finished-at="2019-10-14T15:41:32 IDT">
+        <test-method status="PASS" signature="signIn()[pri:3, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="signIn" duration-ms="13674" started-at="2019-10-17T10:16:10 IDT" finished-at="2019-10-17T10:16:23 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method status="PASS" signature="startCheckout()[pri:4, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="startCheckout" duration-ms="34909" started-at="2019-10-14T15:41:32 IDT" finished-at="2019-10-14T15:42:07 IDT">
+        <test-method status="PASS" signature="startCheckout()[pri:4, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="startCheckout" duration-ms="48620" started-at="2019-10-17T10:16:23 IDT" finished-at="2019-10-17T10:17:12 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startCheckout -->
-        <test-method status="PASS" signature="exitDriver()[pri:0, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="exitDriver" is-config="true" duration-ms="2104" started-at="2019-10-14T15:42:07 IDT" finished-at="2019-10-14T15:42:09 IDT">
+        <test-method status="PASS" signature="exitDriver()[pri:0, instance:com.smokeTest.run.runSmokeTest@57855c9a]" name="exitDriver" is-config="true" duration-ms="2094" started-at="2019-10-17T10:17:12 IDT" finished-at="2019-10-17T10:17:14 IDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exitDriver -->

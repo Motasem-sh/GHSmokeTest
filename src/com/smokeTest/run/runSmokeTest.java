@@ -12,6 +12,9 @@ import com.smokeTest.cases.registration;
 import com.smokeTest.actionElement.genaretors;
 import com.smokeTest.dataInputs.inputs;
 
+
+
+
 public class runSmokeTest extends templats {
 	@BeforeTest
 	public void doBeforeTest() {
@@ -46,14 +49,16 @@ public class runSmokeTest extends templats {
 
 	}
 
+///////////////////////////////////// Checkout
 	@Test(priority = 4)
 
 	public void startCheckout() throws InterruptedException {
-		checkout.searchPDP();
-		checkout.addProductToCart();
+		checkout.searchPDP(inputs.singlePDP);
+		checkout.addSinglePDPToCart();
+		checkout.searchPDP(inputs.bundlePDP);
+		checkout.addBundlePDPToCart();
 		checkout.proceedCheckout();
 	}
-
 
 	@AfterTest
 	public void exitDriver() {
