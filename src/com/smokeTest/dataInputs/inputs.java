@@ -3,9 +3,9 @@ package com.smokeTest.dataInputs;
 import org.openqa.selenium.WebElement;
 
 public class inputs {
-	public static String siteURL = "https://www.garnethill.com";
+	public static String siteURL = "https://devwcs3.garnethill.com";
 	public static WebElement signinpage;
-	public static String email = "smoke@prod.com";
+	public static String email = "mm@mm.co";
 	public static String passwordtest = "1234567a";
 	public static String singlePDP = "41350";
 	public static String bundlePDP = "14256";

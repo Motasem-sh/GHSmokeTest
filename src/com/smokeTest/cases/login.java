@@ -11,6 +11,12 @@ public class login extends templats {
 
 	public static void negativeSigninCase() throws InterruptedException {
 		genaretors.pressButton(selectors.loginLink);
+		Thread.sleep(3000);
+		//genaretors.waitForWelcomeModal();
+		genaretors.clickButtonIfExsists(selectors.closeModal);
+		Thread.sleep(3000);
+		//genaretors.waitForWelcomeModal();
+		genaretors.clickButtonIfExsists(selectors.closeModal);
 		genaretors.sendData(selectors.username, "mm@mm.nn");
 		genaretors.sendData(selectors.userPasswor, "1234567a");
 		genaretors.pressButton(selectors.logonButton);
@@ -25,7 +31,8 @@ public class login extends templats {
 
 	////////////////////////////////// positive login
 
-	public static void positiveSigninCase() {
+	public static void positiveSigninCase() throws InterruptedException {
+		Thread.sleep(3000);
 		genaretors.sendData(selectors.username,inputs.emailReg);
 		genaretors.sendData(selectors.userPasswor,inputs.passwordReg);
 		genaretors.pressButton(selectors.logonButton);

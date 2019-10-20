@@ -100,7 +100,7 @@ public class genaretors extends templats {
 /////////////////////////////////////////////////////////// find element if exist 
 	public static void clickButtonIfExsists(By by) {
 		if (driver.findElements(by).size() != 0)
-			genaretors.pressButton(by);
+			pressButton(by);
 	}
 
 /////////////////////////////////////////////////////////// get element count
@@ -236,5 +236,12 @@ public class genaretors extends templats {
 		}
 		return value;
 
+	}
+
+
+	public static void searchPDP(String PDPNummber) {
+		// TODO Auto-generated method stub
+		sendData(selectors.search, PDPNummber);
+		pressButton(selectors.searchButton);
 	}
 }

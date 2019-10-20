@@ -29,9 +29,9 @@ public class runSmokeTest extends templats {
 
 	}
 ///////////////////////////////////// Registration 
-
-	@Test(priority = 2)
+@Test(priority = 2)
 	public void registration() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		registration.negativeRegistrationCaseStep1();
 		registration.negativeRegistrationCaseStep2();
 		registration.positiveRegistrationCase();
@@ -41,6 +41,7 @@ public class runSmokeTest extends templats {
 	@Test(priority = 3)
 
 	public void signIn() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		login.negativeSigninCase();
 		login.positiveSigninCase();
 	}
@@ -48,22 +49,28 @@ public class runSmokeTest extends templats {
 ///////////////////////////////////// 
 	@Test(priority = 4)
 	public void addToWLGR() throws InterruptedException {
-		checkout.searchPDP(inputs.singlePDP);
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		genaretors.searchPDP(inputs.singlePDP);
 		addPDPToGRWL.addToWL();
 		addPDPToGRWL.addToGR();
 	}
 
 	@Test(priority = 5)
-	public void startCheckout() throws InterruptedException {
-		checkout.searchPDP(inputs.singlePDP);
+	public void addPDPToCart() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		addPDPToCart.addSinglePDPToCart();
+		genaretors.searchPDP(inputs.bundlePDP);
 		addPDPToCart.addBundlePDPToCart();
-		checkout.searchPDP(inputs.bundlePDP);
-		addPDPToCart.addBundlePDPToCart();
-		checkout.searchPDP(inputs.personlizedPDP);
-		addPDPToCart.addPersonlizedToCart();
-		checkout.proceedCheckout();
+		//genaretors.searchPDP(inputs.personlizedPDP);
+	//	addPDPToCart.addPersonlizedToCart();
 	}
 
+	@Test(priority = 6)
+	public void startCheckout() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		checkout.proceedCheckout();
+	}
+	
 	@AfterTest
 	public void exitDriver() {
 		driver.close();
