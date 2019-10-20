@@ -26,10 +26,9 @@ public class login extends templats {
 	////////////////////////////////// positive login
 
 	public static void positiveSigninCase() {
-		genaretors.sendData(selectors.username, inputs.emailReg);
-		genaretors.sendData(selectors.userPasswor, inputs.passwordReg);
+		genaretors.sendData(selectors.username,inputs.emailReg);
+		genaretors.sendData(selectors.userPasswor,inputs.passwordReg);
 		genaretors.pressButton(selectors.logonButton);
-		genaretors.clickButtonIfExsists(selectors.closeModal);
 	}
 
 }

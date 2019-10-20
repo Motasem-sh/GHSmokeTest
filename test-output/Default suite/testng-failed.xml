@@ -7,7 +7,7 @@
         <methods>
           <include name="doBeforeTest"/>
           <include name="exitDriver"/>
-          <include name="addProductToCart"/>
+          <include name="addToWLGR"/>
         </methods>
       </class> <!-- com.smokeTest.run.runSmokeTest -->
     </classes>

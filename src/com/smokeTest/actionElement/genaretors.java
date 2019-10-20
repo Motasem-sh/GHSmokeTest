@@ -12,9 +12,12 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import com.smokeTest.run.templats;
+import com.smokeTest.selectors.selectors;
 
 public class genaretors extends templats {
 	public static void runDriver() {
@@ -28,6 +31,13 @@ public class genaretors extends templats {
 		}
 	}
 
+	
+	public static void waitForWelcomeModal(){
+		WebDriverWait wait = new WebDriverWait(driver, 5000);
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(selectors.welcomeModal));
+		element.click();
+		
+	}
 //////////////////////////press on buttons
 
 	public static void pressButton(By by) {

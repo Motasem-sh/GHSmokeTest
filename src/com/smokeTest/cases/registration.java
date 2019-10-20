@@ -11,11 +11,17 @@ public class registration extends templats {
 
 	public static void negativeRegistrationCaseStep1() throws InterruptedException {
 		genaretors.pressButton(selectors.loginLink);
+		Thread.sleep(3000);
+		//genaretors.waitForWelcomeModal();
+		genaretors.clickButtonIfExsists(selectors.closeModal);
 		genaretors.pressButton(selectors.createAccountButton);
+		Thread.sleep(3000);
+		//genaretors.waitForWelcomeModal();
+		genaretors.clickButtonIfExsists(selectors.closeModal);
 		genaretors.sendData(selectors.username, inputs.email);
 		genaretors.sendData(selectors.reEmail, inputs.email);
-		genaretors.sendData(selectors.userPasswor, inputs.passwordReg);
-		genaretors.sendData(selectors.rePassword, inputs.passwordReg);
+		genaretors.sendData(selectors.userPasswor, inputs.passwordtest);
+		genaretors.sendData(selectors.rePassword, inputs.passwordtest);
 		genaretors.pressButton(selectors.continueButton);
 		Thread.sleep(2000);
 		inputs.errorState = genaretors.getData(selectors.incorrectmessage);
@@ -71,7 +77,6 @@ public class registration extends templats {
 		genaretors.pressButton(selectors.saveButton);
 		Thread.sleep(3000);
 		genaretors.pressButton(selectors.loginLink);
-
 	}
 
 }

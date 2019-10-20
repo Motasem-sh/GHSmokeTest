@@ -28,7 +28,8 @@ public class selectors {
 	//////////////////////////////////////////////////////////////////////////////////
 
 	public static By logo = By.cssSelector("#logoline > div.logos");
-	public static By closeModal = By.id("Close3-Item112");
+	public static By welcomeModal = By.cssSelector("#fcopt_form_35642");
+	public static By closeModal = By.cssSelector("#Close4-Item111 > button");
 	public static By search = By.id("headerBox");
 	public static By searchButton = By.id("searchButton");
 	public static By selectItem = By.cssSelector("div.bundle-select-items-btn-container > div > button");
@@ -38,7 +39,13 @@ public class selectors {
 	public static By colorBundleOption = By.cssSelector("#gwt-option-panel > div.gwt-price-grouped-option-picker.clearfix > div.enabled.gwt-product-option-panel-swatchbox > div.gwt-product-option-panel-widget-panel > div > div");
 	public static By addBundleButton = By.id("gwt-add-to-cart-btn");
 	public static By continueShoppingButton = By.cssSelector("td > div > button.button.secondary");
+	public static By personlizedLink = By.cssSelector("div.gwt-HTML.hyper-label.gwt-personalize-link-style");
+	public static By pesonlizedFirst = By.id("First (or only) Word|11-option");
+	public static By pesonlizedSecond = By.id("Second Word (or leave blank)|21-option");
+	public static By savePersonlized = By.cssSelector("div.gwt-submit-cancel-dialog-button-panel > button.button.primary");
+	public static By addPersonlizedButton = By.cssSelector("div.gwt-product-detail-buttons-panel > div:nth-child(1) > button");
 	public static By miniCartLink = By.id("gwt_minicart_div");
+	
 	public static By startCheckout = By.cssSelector("div.secure-checkout-button-holder > button");
 
 }
